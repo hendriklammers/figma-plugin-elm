@@ -1,0 +1,34 @@
+{
+  "name": "figma-plugin-elm",
+  "version": "1.0.0",
+  "description": "Figma plugin to export SVG as Elm code",
+  "main": "code.js",
+  "scripts": {
+    "lint": "eslint src/ --ext .ts",
+    "watch": "webpack --watch",
+    "start": "npm run watch",
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hendrik Lammers",
+  "license": "MIT",
+  "dependencies": {
+    "@types/figma": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.18.2",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}
