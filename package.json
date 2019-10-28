@@ -13,9 +13,11 @@
   "author": "Hendrik Lammers",
   "license": "MIT",
   "dependencies": {
+    "@types/clipboard": "^2.0.1",
     "@types/figma": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
+    "clipboard": "^2.0.4",
     "css-loader": "^3.1.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
