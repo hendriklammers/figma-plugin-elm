@@ -9,6 +9,8 @@ module.exports = {
   plugins: ['@typescript-eslint/eslint-plugin'],
   env: {
     browser: true,
+    es6: true,
+    node: true,
   },
   parserOptions: {
     ecmaVersion: 2018,
