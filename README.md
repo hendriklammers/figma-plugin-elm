@@ -3,18 +3,6 @@
 Figma plugin to export SVG as Elm code
 
 
-## Install
-
-```
-
-```
-
-## Usage
-
-```
-
-```
-
 ## License
 
 MIT
