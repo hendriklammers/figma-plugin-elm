@@ -1,5 +1,41 @@
 <!-- <img src="<%= require('./logo.svg') %>" /> -->
-<button id="copy-button" data-clipboard-target="#code">
-  Copy to clipboard
-</button>
-<code id="code" />
+<div class="elm-settings">
+  <span class="elm-title elm-settings__title">Module aliases</span>
+  <input
+    type="text"
+    spellcheck="false"
+    class="elm-settings__text"
+    id="alias-svg"
+    placeholder="Svg"
+    value=""
+  />
+  <input
+    type="text"
+    spellcheck="false"
+    class="elm-settings__text"
+    id="alias-svg-attr"
+    placeholder="Svg.Attributes"
+    value=""
+  />
+  <button
+    id="apply-settings-button"
+    class="elm-button elm-settings__apply"
+    disabled="true"
+  >
+    Apply
+  </button>
+</div>
+<div class="elm-output">
+  <span class="elm-title">Output</span>
+  <code class="elm-output__code" id="code-output"></code>
+</div>
+<div class="elm-footer">
+  <button id="cancel-button" class="elm-button">Cancel</button>
+  <button
+    id="copy-button"
+    class="elm-button elm-button--primary"
+    data-clipboard-target="#code-output"
+  >
+    Copy to clipboard
+  </button>
+</div>
