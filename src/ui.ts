@@ -33,6 +33,7 @@ applySettingsButton.addEventListener('click', () => {
       { pluginMessage: { type: 'apply-settings', options } },
       '*'
     )
+    applySettingsButton.disabled = true
   }
 })
 
@@ -42,11 +43,6 @@ document.querySelectorAll('#alias-svg, #alias-svg-attr').forEach(elem => {
       svgAlias: aliasSvgInput.value,
       svgAttributeAlias: aliasSvgAttributeInput.value,
     }
-
-    if (Object.values(options).filter(val => val).length) {
-      applySettingsButton.disabled = false
-    } else {
-      applySettingsButton.disabled = true
-    }
+    applySettingsButton.disabled = false
   })
 })
