@@ -2079,9 +2079,9 @@ hosted-git-info@^2.1.4:
   integrity sha512-kssjab8CvdXfcXMXVcvsXum4Hwdq9XGtRD3TteMEvEbq0LXyiNQr6AprqKqfeaDXze7SxWvRxdpwE6ku7ikLkg==
 
 html-elm@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/html-elm/-/html-elm-3.1.0.tgz#b89e0b723acf49b4a8478e6cf11294ba1d54218c"
-  integrity sha512-s7wYdIAV1d05TFqTdQJz817AA7WEQhtbJUlX7InDnVacoHGmwIt090H/KDpspKrCKJpqp1z8elo3Jzc8+Hn0OQ==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/html-elm/-/html-elm-3.1.1.tgz#02213f4759a38626e51ad4ddf200ccd12c61b8d6"
+  integrity sha512-m+ZmUElW93kgsHl76dkX/HtIWXGhvTAAAj/iRxezUK3cC7p93+3Xy+w6zbHwakt1OJxOsdV+L6kFDQYqlr5jbw==
   dependencies:
     commander "^2.19.0"
     htmlparser2 "^3.10.0"
