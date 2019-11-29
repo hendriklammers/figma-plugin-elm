@@ -1,5 +1,5 @@
 This plugin allows you to export a selection as Elm code.
-The generated code will be for the `elm/svg` package so make sure you have it installed in your Elm project.
+The generated code will be for the `elm/svg` package, so make sure you have it installed in your Elm project.
 
 Usage:
 
