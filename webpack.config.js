@@ -1,8 +1,8 @@
-const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
-module.exports = (env, argv) => ({
+module.exports = (_env, argv) => ({
   mode: argv.mode === 'production' ? 'production' : 'development',
 
   // This is necessary because Figma's 'eval' works differently than normal eval
@@ -18,7 +18,7 @@ module.exports = (env, argv) => ({
       // Converts TypeScript code to JavaScript
       {
         test: /\.tsx?$/,
-        use: ['ts-loader', 'eslint-loader'],
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
 
@@ -26,12 +26,6 @@ module.exports = (env, argv) => ({
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-
-      // Allows you to use "<%= require('./file.svg') %>" in your HTML code to get a data URI
-      {
-        test: /\.(png|jpg|gif|webp|svg|zip)$/,
-        loader: [{ loader: 'url-loader' }],
       },
     ],
   },
@@ -52,6 +46,6 @@ module.exports = (env, argv) => ({
       inlineSource: '.(js)$',
       chunks: ['ui'],
     }),
-    new HtmlWebpackInlineSourcePlugin(),
+    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/ui/]),
   ],
 })
